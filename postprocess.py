@@ -158,11 +158,11 @@ def main(argv):
         md = gpx.get_moving_data()
         print(md)
         
-        map_obj = overlayGPX(gpx, 14)
-        map_fn = os.path.join(outdir, basename+'_map.html') 
-        print(f'Writing {map_fn}')
-        map_obj.save(outfile=map_fn)
-        continue
+        # This generates a web page with a map of the route!
+        #map_obj = overlayGPX(gpx, 14)
+        #map_fn = os.path.join(outdir, basename+'_map.html') 
+        #print(f'Writing {map_fn}')
+        #map_obj.save(outfile=map_fn)
     
         gpx_fn = os.path.join(outdir, basename+'.GPX')        
         print(f'Writing {gpx_fn}')
